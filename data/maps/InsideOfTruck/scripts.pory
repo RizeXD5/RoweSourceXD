@@ -980,16 +980,16 @@ Start_EvenScript_Flagset_Difficulty::
 	
 //Starter Scripts
 
-//Meowth
+//Gligar
 Script_Give_Starter1::
 	lock
 	faceplayer
-	showmonpic SPECIES_MEOWTH, 10, 3
+	showmonpic SPECIES_GLIGAR, 10, 3
 	msgbox Text_Take_Starter1, MSGBOX_YESNO
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_MEOWTH, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_JOLLY, 1, 0, 0, 0, 0, 0, 0, 15, 31, 15, 31, 15, 15, MOVE_FAKE_OUT, MOVE_SCRATCH, MOVE_HONE_CLAWS, MOVE_HYPNOSIS
+	givecustommon SPECIES_GLIGAR, 10, ITEM_RAZOR_FANG, ITEM_POKE_BALL, NATURE_JOLLY, 1, 0, 0, 0, 0, 0, 0, 31, 31, 3Q, 31, 31, 31, MOVE_POISON_STING, MOVE_SAND_ATTACK, MOVE_HARDEN, MOVE_FLY
 	msgbox Text_Received_Starter1, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
 	waitfanfare
@@ -997,22 +997,22 @@ Script_Give_Starter1::
 	end
 
 Text_Take_Starter1:
-	.string "Do you want the Scratch Cat Pokémon\n"
-	.string "Meowth?$"
+	.string "Do you want the Fly Scorpion Pokémon\n"
+	.string "Gligar?$"
 
 Text_Received_Starter1:
-	.string "{PLAYER} received a Meowth!$"
+	.string "{PLAYER} received a Gligar!$"
 	
-//Slugma
+//Manaphy
 Script_Give_Starter2:
 	lock
 	faceplayer
-	showmonpic SPECIES_SLUGMA, 10, 3
+	showmonpic SPECIES_MANAPHY, 10, 3
 	msgbox Text_Take_Starter2, MSGBOX_YESNO
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_SLUGMA, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_MODEST, 1, 0, 0, 0, 0, 0, 0, 15, 15, 15, 31, 31, 15, MOVE_YAWN, MOVE_SMOG, MOVE_EMBER, MOVE_EARTH_POWER
+	givecustommon SPECIES_MANAPHY, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_MODEST, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BUBBLE, MOVE_CHARM, MOVE_HEART_SWAP, MOVE_TAIL_GLOW
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_Received_Starter2, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
@@ -1021,22 +1021,22 @@ Script_Give_Starter2:
 	end
 
 Text_Take_Starter2:
-	.string "Do you want the Lava Pokémon\n"
-	.string "Slugma?$"
+	.string "Do you want the Seafaring Pokémon\n"
+	.string "Manaphy?$"
 
 Text_Received_Starter2:
-	.string "{PLAYER} received a Slugma!$"
+	.string "{PLAYER} received a Manaphy!$"
 	
-//Barboach
+//Poipole
 Script_Give_Starter3::
 	lock
 	faceplayer
-	showmonpic SPECIES_BARBOACH, 10, 3
+	showmonpic SPECIES_POIPOLE, 10, 3
 	msgbox Text_Take_Starter3, MSGBOX_YESNO
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_BARBOACH, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_JOLLY, 1, 0, 0, 0, 0, 0, 0, 15, 31, 15, 31, 15, 15, MOVE_MUD_SLAP, MOVE_WATER_GUN, MOVE_MUD_SPORT, MOVE_DRAGON_DANCE
+	givecustommon SPECIES_POIPOLE, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_TIMID, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_ACID, MOVE_PECK, MOVE_GROWL, MOVE_DRAGON_PULSE
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_Received_Starter3, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
@@ -1045,22 +1045,22 @@ Script_Give_Starter3::
 	end
 
 Text_Take_Starter3:
-	.string "Do you want the Whiskers Pokémon\n"
-	.string "Barboach?$"
+	.string "Do you want the Poison Pin Pokémon\n"
+	.string "Poipole?$"
 
 Text_Received_Starter3:
-	.string "{PLAYER} received a Barboach!$"
+	.string "{PLAYER} received a Poipole!$"
 	
-//Kricketot
+//Shuppet
 Script_Give_Starter4::
 	lock
 	faceplayer
-	showmonpic SPECIES_KRICKETOT, 10, 3
+	showmonpic SPECIES_SHUPPET, 10, 3
 	msgbox Text_Take_Starter4, MSGBOX_YESNO
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_KRICKETOT, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_JOLLY, 1, 0, 0, 0, 0, 0, 0, 15, 31, 15, 31, 15, 15, MOVE_STRUGGLE_BUG, MOVE_GROWL, MOVE_BUG_BITE, MOVE_UPROAR
+	givecustommon SPECIES_SHUPPET, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_JOLLY, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SHADOW_SNEAK, MOVE_GUNK_SHOT, MOVE_DISABLE, MOVE_SCREECH
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_Received_Starter4, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
@@ -1069,22 +1069,22 @@ Script_Give_Starter4::
 	end
 
 Text_Take_Starter4:
-	.string "Do you want the Cricket Pokémon\n"
-	.string "Kricketot?$"
+	.string "Do you want the Puppet Pokémon\n"
+	.string "Shuppet?$"
 
 Text_Received_Starter4:
-	.string "{PLAYER} received a Kricketot!$"
+	.string "{PLAYER} received a Shuppet!$"
 	
-//Cubchoo
+//Larvesta
 Script_Give_Starter5::
 	lock
 	faceplayer
-	showmonpic SPECIES_CUBCHOO, 10, 3
+	showmonpic SPECIES_LARVESTA, 10, 3
 	msgbox Text_Take_Starter5, MSGBOX_YESNO
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_CUBCHOO, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_JOLLY, 1, 0, 0, 0, 0, 0, 0, 15, 31, 15, 31, 15, 15, MOVE_POWDER_SNOW, MOVE_GROWL, MOVE_ENDURE, MOVE_NIGHT_SLASH
+	givecustommon SPECIES_LARVESTA, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_TIMID, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_EMBER, MOVE_STRING_SHOT, MOVE_MORNING_SUN, MOVE_ABSORB
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_Received_Starter5, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
@@ -1093,22 +1093,22 @@ Script_Give_Starter5::
 	end
 
 Text_Take_Starter5:
-	.string "Do you want the Chill Pokémon\n"
-	.string "Cubchoo?$"
+	.string "Do you want the Torch Pokémon\n"
+	.string "Larvesta$"
 
 Text_Received_Starter5:
-	.string "{PLAYER} received a Cubchoo!$"
+	.string "{PLAYER} received a Larvesta!$"
 	
-//Skiddo
+//Oddish
 Script_Give_Starter6::
 	lock
 	faceplayer
-	showmonpic SPECIES_SKIDDO, 10, 3
+	showmonpic SPECIES_ODDISH, 10, 3
 	msgbox Text_Take_Starter6, MSGBOX_YESNO
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_SKIDDO, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_ADAMANT, 1, 0, 0, 0, 0, 0, 0, 31, 31, 15, 15, 15, 15, MOVE_TACKLE, MOVE_GROWL, MOVE_VINE_WHIP, MOVE_MILK_DRINK
+	givecustommon SPECIES_ODDISH, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_MODEST, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_ABSORB, MOVE_SWEER_SCENT, MOVE_GROWTH, MOVE_ACID
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_Received_Starter6, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
@@ -1117,22 +1117,22 @@ Script_Give_Starter6::
 	end
 
 Text_Take_Starter6:
-	.string "Do you want the Mount Pokémon\n"
-	.string "Skiddo?$"
+	.string "Do you want the Weed Pokémon\n"
+	.string "Oddish?$"
 
 Text_Received_Starter6:
-	.string "{PLAYER} received a Skiddo!$"
+	.string "{PLAYER} received a Oddish!$"
 	
-//Sandygast
+//Trapinch
 Script_Give_Starter7::
 	lock
 	faceplayer
-	showmonpic SPECIES_SANDYGAST, 10, 3
+	showmonpic SPECIES_TRAPINCH, 10, 3
 	msgbox Text_Take_Starter7, MSGBOX_YESNO
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_SANDYGAST, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_MODEST, 1, 0, 0, 0, 0, 0, 0, 15, 15, 15, 15, 31, 31, MOVE_HARDEN, MOVE_ABSORB, MOVE_ASTONISH, MOVE_ANCIENT_POWER
+	givecustommon SPECIES_TRAPINCH, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_ADAMANT, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_MUD_SLAP, MOVE_ASTONISH, MOVE_BITE, MOVE_BUG_BITE
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_Received_Starter7, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
@@ -1141,22 +1141,22 @@ Script_Give_Starter7::
 	end
 
 Text_Take_Starter7:
-	.string "Do you want the Sand Heap Pokémon\n"
-	.string "Sandygast?$"
+	.string "Do you want the Ant Pit Pokémon\n"
+	.string "Trapinch?$"
 
 Text_Received_Starter7:
-	.string "{PLAYER} received a Sandygast!$"
+	.string "{PLAYER} received a Trapinch!$"
 	
-//Cufant
+//Eevee
 Script_Give_Starter8::
 	lock
 	faceplayer
-	showmonpic SPECIES_CUFANT, 10, 3
+	showmonpic SPECIES_EEVEE, 10, 3
 	msgbox Text_Take_Starter8, MSGBOX_YESNO
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_CUFANT, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_ADAMANT, 1, 0, 0, 0, 0, 0, 0, 31, 31, 15, 15, 15, 15, MOVE_POUND, MOVE_GROWL, MOVE_ROLLOUT, MOVE_CURSE
+	givecustommon SPECIES_EEVEE, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_HARDY, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_GROWL, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_Received_Starter8, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
@@ -1165,22 +1165,22 @@ Script_Give_Starter8::
 	end
 
 Text_Take_Starter8:
-	.string "Do you want the Copperderm Pokémon\n"
-	.string "Cufant?$"
+	.string "Do you want the Evolution Pokémon\n"
+	.string "Eevee?$"
 
 Text_Received_Starter8:
-	.string "{PLAYER} received a Cufant!$"	
+	.string "{PLAYER} received a Eevee!$"	
 	
-//Smeargle
+//Dreepy
 Script_Give_Starter9::
 	lock
 	faceplayer
-	showmonpic SPECIES_SMEARGLE, 10, 3
+	showmonpic SPECIES_DREEPY, 10, 3
 	msgbox Text_Take_Starter9, MSGBOX_YESNO
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_SMEARGLE, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_JOLLY, 1, 0, 0, 0, 0, 0, 0, 15, 31, 15, 31, 15, 15, MOVE_SKETCH, MOVE_POUND, MOVE_BITE, MOVE_CELEBRATE
+	givecustommon SPECIES_DREEPY, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_JOLLY, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 15, 31, MOVE_DRAGON_DANCE, MOVE_SHADOE_CLAW, MOVE_OUTRAGE, MOVE_GROWL
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_Received_Starter9, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
@@ -1189,11 +1189,11 @@ Script_Give_Starter9::
 	end
 
 Text_Take_Starter9:
-	.string "Do you want the Painter Pokémon\n"
-	.string "Smeargle?$"
+	.string "Do you want the Lingering Pokémon\n"
+	.string "Dreepy?$"
 
 Text_Received_Starter9:
-	.string "{PLAYER} received a Smeargle!$"
+	.string "{PLAYER} received a Dreepy!$"
 	
 Script_Give_Starter10::
 	lock
