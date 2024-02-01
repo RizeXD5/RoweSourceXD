@@ -1108,7 +1108,7 @@ Script_Give_Starter6::
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_ODDISH, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_MODEST, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_ABSORB, MOVE_SWEER_SCENT, MOVE_GROWTH, MOVE_ACID
+	givecustommon SPECIES_ODDISH, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_MODEST, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_ABSORB, MOVE_SWEET_SCENT, MOVE_GROWTH, MOVE_ACID
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_Received_Starter6, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
@@ -1180,7 +1180,7 @@ Script_Give_Starter9::
 	hidemonpic
 	compare VAR_RESULT, NO
 	goto_if_eq Start_EventScript_Chose_Starter
-	givecustommon SPECIES_DREEPY, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_JOLLY, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_DRAGON_DANCE, MOVE_SHADOE_CLAW, MOVE_OUTRAGE, MOVE_GROWL
+	givecustommon SPECIES_DREEPY, 10, ITEM_NONE, ITEM_POKE_BALL, NATURE_JOLLY, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_DRAGON_DANCE, MOVE_SHADOW_CLAW, MOVE_OUTRAGE, MOVE_GROWL
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_Received_Starter9, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
