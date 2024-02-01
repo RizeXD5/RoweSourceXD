@@ -881,15 +881,15 @@ static const struct ListMenuItem sSet0[] =
 };
 
 //Starter Selection -------------------------------------------------------------------------
-static const u8 sText_Starter_1[] = _("Meowth");
-static const u8 sText_Starter_2[] = _("Slugma");
-static const u8 sText_Starter_3[] = _("Barboach");
-static const u8 sText_Starter_4[] = _("Kricketot");
-static const u8 sText_Starter_5[] = _("Cubchoo");
-static const u8 sText_Starter_6[] = _("Skiddo");
-static const u8 sText_Starter_7[] = _("Sandygast");
-static const u8 sText_Starter_8[] = _("Cufant");
-static const u8 sText_Starter_9[] = _("Smeargle");
+static const u8 sText_Starter_1[] = _("Gligar");
+static const u8 sText_Starter_2[] = _("Manaphy");
+static const u8 sText_Starter_3[] = _("Poipole");
+static const u8 sText_Starter_4[] = _("Shuppet");
+static const u8 sText_Starter_5[] = _("Larvesta");
+static const u8 sText_Starter_6[] = _("Oddish");
+static const u8 sText_Starter_7[] = _("Trapinch");
+static const u8 sText_Starter_8[] = _("Eevee");
+static const u8 sText_Starter_9[] = _("Dreepy");
 
 
 static const struct ListMenuItem sSet1[] =
