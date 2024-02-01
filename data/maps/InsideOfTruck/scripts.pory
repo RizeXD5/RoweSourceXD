@@ -1121,7 +1121,7 @@ Text_Take_Starter6:
 	.string "Oddish?$"
 
 Text_Received_Starter6:
-	.string "{PLAYER} received a Oddish!$"
+	.string "{PLAYER} received an Oddish!$"
 	
 //Trapinch
 Script_Give_Starter7::
@@ -1169,7 +1169,7 @@ Text_Take_Starter8:
 	.string "Eevee?$"
 
 Text_Received_Starter8:
-	.string "{PLAYER} received a Eevee!$"	
+	.string "{PLAYER} received an Eevee!$"	
 	
 //Dreepy
 Script_Give_Starter9::
